@@ -37,13 +37,14 @@ while True:
         print("Got the AI response!")
         print(ai_response)
         post = ""
-        post = ai_response + "\n\n" + "\__________________________"+  "\n\n" + "^(Current quests:) "
-        quests = AID.getQuests()
-        if(len(quests)==0): post += "^(none)\n"
-        else: 
-            for quest in quests:
-                quest = "^(" + quest + ")" + "\n"
-                post += quest
+        #post = ai_response + "\n\n" + "\__________________________"+  "\n\n" + "^(Current quests:) "
+        post = ai_response
+        #quests = AID.getQuests()
+        #if(len(quests)==0): post += "^(none)\n"
+        #else: 
+        #    for quest in quests:
+        #        quest = "^(" + quest + ")" + "\n"
+        #        post += quest
         #post += "^([AI Memory](" + getRawPaste(pastebin.create_paste("Memory: " + AID.getMemory())) + "))"
         postTitle = "You " + top_comment[0].lower() + top_comment[1:len(top_comment)] #make the first letter lowercase
 ########################################
